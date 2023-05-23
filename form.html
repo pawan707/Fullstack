@@ -5,24 +5,109 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body{
+            background-color: lightblue;
+        }
+        form{
+            background-color: azure;
+            padding: 50px;
+            text-align: center;
+        }
+        input{
+            height: 30px;
+            width: 200px;
+            border-radius: 5px;
+             
+        }
+        .button{
+
+            background-color:rgba(0,128,0,0);
+            height: 40px;
+            color: green;
+            text-transform: uppercase;
+            font-size: large;
+            border:2px solid green;
+        }
+
+
+
+
+
+
+
+    </style>
 </head>
 <body>
-    <p>Plese select</p>
-    <input type="radio" id="male" name="gender">
-    <label for="male">Male</label>
-    <input type="radio" id="female" name="gender">
-    <label for="female">Female</label>
+    
+    <form>
+        <h1>Student Registration From</h1>
+    <label for="fullname">Full Name :</label>
+    <input type="text" placeholder="Enter your name" id="fullname" required>
+    <br><br>
+    <label for="pass">Password :</label>
+    <input type="password" id="pass">
+    <br><br> 
+    <label for="Email">Email</label>
+    <input type="email" id="email">
+    <br><br>
+    <label for="color">Enter your color value</label>
+    <input type="color" type="color">
+    <br><br> 
+    <label for="DOB">Enter your D.O.B</label>
+    <input type="date" type="date" min="2023-05-15" max="2024-06-25">
+    <br><br>
+    <label for="datetime">Enter your meeting Data & time</label>
+    <input type="datetime-local" id="datetime">
+    <br><br>
+    <label for="resume"> Plese upload your resume</label>
+    <input type="file" id="resume" multiple>
+    <br><br>
+
+    <input type="hidden" value="3168" id="studentid">
+    <br><br>
+
+    <input type="month">
+    <br><br>
+
+    <input type="number" max="2020" min="2010">
+    <br><br>
+    <input type="range" min="0" max="10">
+    <br><br>
+    <input type="time">
+    <br><br>
+    <label for="website">Enter your Github URL</label>
+    <input type="url" id="Github">
+    <br><br>
 
 
 
-    <p>Plese select your Fav car</p>
-    <input type="radio" id="Mahindra" name="car">
-    <label for="Mahindra">Mahindra</label>
-    <input type="radio" id="Kia" name="car">
-    <label for="Kia">Kia</label>
-    <input type="radio" id="Tata" name="car">
-    <label for="Tata">Tata</label>
-    <input type="radio" id="Maruti" name="car">
-    <label for="Maruti">Maruti</label>
+
+
+
+
+    <input type="submit" value="submit" class="button">
+    <input type="reset" class="button">
+
+
+
+
+
+    <br><br>
+    
+
+   
+    <!-- <input type="image" src="/img/586383c67d90850fc3ce2914.png" width="60px">
+      -->
+    
+
+
+
+
+    
+
+
+
+    </form>
 </body>
 </html>
